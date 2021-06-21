@@ -1,35 +1,9 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 import torch
-from torch.linalg import norm
-import wandb
 import torch.nn.functional as F
-from numpy.core.numeric import Inf
-import torch
-import numpy as np
-import time
-from laspy.file import File
-import pandas as pd
-import plotly.graph_objects as go
-from matplotlib import widgets
-from mpl_toolkits import mplot3d
-import matplotlib as mpl
-import matplotlib.colors as colors
-import matplotlib.patches as patches
-import matplotlib.mathtext as mathtext
-import matplotlib.pyplot as plt
-import matplotlib.artist as artist
-import matplotlib.image as image
-from scipy.spatial.transform import Rotation
-from sklearn.neighbors import NearestNeighbors
-import os
-import math
-import laspy
-import torch
-import torch.nn.functional as F
-from yaml import load as load_yaml
 
-eps = 1e-8
+import wandb
 
 
 def make_toy_graph(x, epoch, text='Toy Data', fit=False, show=False, save=False):

@@ -1,9 +1,10 @@
-import torch
 import pyro.distributions as dist
+import torch
 import torch.nn.functional as F
 from torch.utils.data import Dataset
 
 from utils import make_toy_graph
+
 
 class ToyData(Dataset):
     def __init__(self, points_per_sample=200, show_data=False, transform=None):

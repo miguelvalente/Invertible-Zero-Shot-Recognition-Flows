@@ -1,7 +1,8 @@
-from transform import Transform
+import einops
 import torch
 import torch.nn as nn
-import einops
+
+from transform import Transform
 
 #  Code adapted from : https://github.com/didriknielsen/survae_flows/
 

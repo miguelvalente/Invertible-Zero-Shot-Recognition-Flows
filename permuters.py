@@ -1,8 +1,10 @@
+import numpy as np
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
+
 from transform import Transform
-import numpy as np
+
 
 class Permuter(Transform):
     def __init__(self, permutation, event_dim=-1):

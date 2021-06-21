@@ -1,22 +1,22 @@
-import torch
-import wandb
-from transform import Flow
-from toydata import ToyData
-from torch.utils.data import DataLoader, random_split
-from utils import make_toy_graph
-from torchviz import make_dot
-import pyro
 import matplotlib.pyplot as plt
-import tqdm
-from distributions import DoubleDistribution, StandardNormal, Normal, SemanticDistribution
-import affine_coupling
-from permuters import LinearLU, Permuter, Reverse
-import torch.nn as nn
-from affine_coupling import AffineCoupling
-import torch.optim as optim
+import pyro
+import torch
 import torch.distributions as dist
-from act_norm import ActNormBijection
+import torch.nn as nn
+import torch.optim as optim
+import tqdm
+from torch.utils.data import DataLoader, random_split
 
+import affine_coupling
+import wandb
+from act_norm import ActNormBijection
+from affine_coupling import AffineCoupling
+from distributions import (DoubleDistribution, Normal, SemanticDistribution,
+                           StandardNormal)
+from permuters import LinearLU, Permuter, Reverse
+from toydata import ToyData
+from transform import Flow
+from utils import make_toy_graph
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -46,12 +46,11 @@ split_dim = input_dim - context_dim
 
 train_loader = DataLoader(toy_data,
                           batch_size=config['batch_size'],
-                          shuffle=False, pin_memory=True)
+                          shuffle=True, pin_memory=True)
 
 test_seen = toy_data.x.clone()
 test_seen = [t for t in torch.split(test_seen,
                                     points_per_sample)]
-
 
 visual_distribution = dist.MultivariateNormal(torch.zeros(split_dim).to(device), torch.eye(split_dim).to(device))
 semantic_distribution = SemanticDistribution(contexts, torch.ones(context_dim).to(device), (2, 1))
