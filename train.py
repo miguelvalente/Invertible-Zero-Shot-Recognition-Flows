@@ -1,18 +1,14 @@
-import matplotlib.pyplot as plt
-import pyro
 import torch
 import torch.distributions as dist
 import torch.nn as nn
 import torch.optim as optim
 import tqdm
-from torch.utils.data import DataLoader, random_split
+from torch.utils.data import DataLoader
 
-import affine_coupling
 import wandb
 from act_norm import ActNormBijection
 from affine_coupling import AffineCoupling
-from distributions import (DoubleDistribution, Normal, SemanticDistribution,
-                           StandardNormal)
+from distributions import (DoubleDistribution, SemanticDistribution)
 from permuters import LinearLU, Permuter, Reverse
 from toydata import ToyData
 from transform import Flow

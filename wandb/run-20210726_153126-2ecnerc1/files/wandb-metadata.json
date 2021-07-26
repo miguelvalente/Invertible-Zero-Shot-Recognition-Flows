@@ -1,0 +1,24 @@
+{
+    "os": "Linux-5.12.15-arch1-1-x86_64-with-arch-Arch-Linux",
+    "python": "3.7.7",
+    "heartbeatAt": "2021-07-26T14:31:28.107278",
+    "startedAt": "2021-07-26T14:31:26.232488",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 2060",
+    "gpu_count": 1,
+    "cpu_count": 12,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "codePath": "train.py",
+    "program": "/home/mvalente/docs/msc_ai/thesis/tests/Invertible-Zero-Shot-Recognition-Flows/train.py",
+    "git": {
+        "remote": "https://github.com/miguelvalente/Invertible-Zero-Shot-Recognition-Flows.git",
+        "commit": "ebfbd126d09d73e9762287e2ddc007420af5a9ee"
+    },
+    "email": "miguelvalente@protonmail.com",
+    "root": "/home/mvalente/docs/msc_ai/thesis/tests/Invertible-Zero-Shot-Recognition-Flows",
+    "host": "prodigy",
+    "username": "mvalente",
+    "executable": "/home/mvalente/.config/anaconda3/envs/flow/bin/python"
+}

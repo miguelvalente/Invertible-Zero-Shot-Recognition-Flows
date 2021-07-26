@@ -1,0 +1,761 @@
+2021-07-26 15:16:48,426 INFO    MainThread:86989 [internal.py:wandb_internal():62] W&B internal server running at pid: 86989
+2021-07-26 15:16:48,429 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: check_version
+2021-07-26 15:16:48,429 INFO    WriterThread:86989 [datastore.py:open_for_write():76] open: wandb/run-20210726_151647-3pi41y0u/run-3pi41y0u.wandb
+2021-07-26 15:16:48,431 DEBUG   SenderThread:86989 [sender.py:send():88] send: header
+2021-07-26 15:16:48,431 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:16:48,431 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: check_version
+2021-07-26 15:16:48,437 DEBUG   Thread-10 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): pypi.org:443
+2021-07-26 15:16:48,683 DEBUG   Thread-10 :86989 [connectionpool.py:_make_request():461] https://pypi.org:443 "GET /pypi/wandb/json HTTP/1.1" 200 58656
+2021-07-26 15:16:48,758 DEBUG   SenderThread:86989 [sender.py:send():88] send: run
+2021-07-26 15:16:48,786 DEBUG   SenderThread:86989 [cmd.py:execute():818] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/mvalente/docs/msc_ai/thesis/tests/Invertible-Zero-Shot-Recognition-Flows, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-26 15:16:48,805 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:16:49,717 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:16:49,744 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: run_start
+2021-07-26 15:16:49,755 INFO    SenderThread:86989 [dir_watcher.py:__init__():167] watching files in: wandb/run-20210726_151647-3pi41y0u/files
+2021-07-26 15:16:49,755 INFO    SenderThread:86989 [sender.py:_start_run_threads():469] run started: 3pi41y0u with start time 1627309007
+2021-07-26 15:16:49,756 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:49,757 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:49,783 DEBUG   HandlerThread:86989 [cmd.py:execute():818] Popen(['git', 'cat-file', '--batch-check'], cwd=/home/mvalente/docs/msc_ai/thesis/tests/Invertible-Zero-Shot-Recognition-Flows, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-26 15:16:49,789 DEBUG   HandlerThread:86989 [cmd.py:execute():818] Popen(['git', 'rev-parse', '--show-toplevel'], cwd=/home/mvalente/docs/msc_ai/thesis/tests/Invertible-Zero-Shot-Recognition-Flows, universal_newlines=False, shell=None, istream=None)
+2021-07-26 15:16:49,799 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:16:49,799 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-metadata.json with policy now
+2021-07-26 15:16:49,804 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:16:49,805 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:16:49,805 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:16:49,821 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:16:49,822 DEBUG   Thread-17 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:16:50,227 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:16:50,227 DEBUG   Thread-17 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:16:50,231 DEBUG   SenderThread:86989 [sender.py:send():88] send: config
+2021-07-26 15:16:50,242 DEBUG   Thread-17 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:16:50,251 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:16:50,563 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:16:50,747 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/config.yaml
+2021-07-26 15:16:50,749 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20210726_151647-3pi41y0u/files/wandb-metadata.json
+2021-07-26 15:16:50,749 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:16:50,750 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20210726_151647-3pi41y0u/files/requirements.txt
+2021-07-26 15:16:50,842 DEBUG   Thread-17 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/wandb-metadata.json?Expires=1627395367&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=gwP49ntJY6B9MoBBYMaj7%2FqZi9b42pmjYzOmZrUoO6A7qWgQT2WHfiDStKkN%2F63nyfVPoKt9yrhKxX74lGFbXDYZW0uf1eBI71cwlEp%2Fvh5k9TuslzYDJCT%2BBDc%2BMriXMBf67yMoosXczsWQcCmlc8yCbVQxJqDo4HpwnAoxDs51h1s5XwGggwiLXYzfHedN8qK7AUOYgWRdw8SLX%2BQXU4%2BwKW9BaX%2Bm2m5Jnef6TCg%2B2pzgCdHvFX0AEfsJdWgexqK1EwoUR2IRKtTYN5pfb32KlRgK0tmaY1%2FX%2BgFpnNtSr9PBOV1e6RTD8SHGxF1u2eHWfddF%2FLQ%2BSnF5TC4d5A%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:16:50,843 INFO    Thread-17 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/5aecuzl5-wandb-metadata.json
+2021-07-26 15:16:51,761 DEBUG   Thread-11 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:16:52,082 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:16:52,923 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:16:52,924 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/graph/g.r.a.p.h._.0_summary_a9191527.graph.json with policy now
+2021-07-26 15:16:52,924 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,926 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:52,926 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,927 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:52,928 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,929 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:52,946 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,947 DEBUG   Thread-18 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:16:52,948 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:52,948 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,948 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:52,949 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,949 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:52,949 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,949 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:52,950 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,950 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:52,950 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,951 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:52,951 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:16:52,952 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:16:53,198 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:16:53,299 DEBUG   Thread-18 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:16:53,307 DEBUG   Thread-18 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:16:53,745 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:16:53,746 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_created():215] file/dir created: wandb/run-20210726_151647-3pi41y0u/files/media
+2021-07-26 15:16:53,915 DEBUG   Thread-18 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/graph/g.r.a.p.h._.0_summary_a9191527.graph.json?Expires=1627395370&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=TI4lDnZWgbKiReT7fQWm8AETLV0eBzaW9VEj3NpuOnCFRF61S2iGenaTL2T8ViRstkvDxYJgWzs1t%2Fi8I2Eq0buJGcOe2wzC89mdiXjw8pzcoPHOecGoI14AWjxY7JErZ4oNq1BMQbvA1ZCAEDoFj5GHgzcqW9%2B0UjjZXqWCBOETIcrHEVkIIQHF6wzUMMtsJiDJ%2BLqRz1mfbEi7aGoZavcwneQQZuHtGmpOgrleCqdh4xzZkr3FU5M0MNdmd07eLZuysGZ%2B6NgPuDo4jeCAScqkUrD1JR2qZgw%2BA3MLVjR%2BKBA%2FhTOMO4z7TJC4u0ILKClWOL4MUviaxxTar%2BxwPw%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:16:53,916 INFO    Thread-18 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/35acykiz-media/graph/g.r.a.p.h._.0_summary_a9191527.graph.json
+2021-07-26 15:16:55,669 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:16:57,654 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:16:57,907 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:02,094 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:02,326 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:03,750 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:17:03,904 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:17:03,904 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_0_228295ae.plotly.json with policy now
+2021-07-26 15:17:03,911 DEBUG   Thread-19 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:17:03,924 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:17:03,927 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:17:03,930 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:17:04,358 DEBUG   Thread-19 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:17:04,364 DEBUG   Thread-19 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:17:04,750 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:17:04,751 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/media
+2021-07-26 15:17:05,237 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:17:05,237 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:17:05,237 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:17:05,242 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:17:05,249 DEBUG   Thread-19 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_0_228295ae.plotly.json?Expires=1627395381&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=YM3QphJjNq%2FwRjtwZEblKCY%2FOgMpgTe98a3jS2v452fek796XyLy60SdiWfaYDn%2BDOlcQobeRpJr9UUBuYeC8AJLCmisApso77A8ylcrUwiBNbItrZMFofHBgKAs07ppsv07gBG2PWmIK6Rd6vDfV61YEZxy6FaLowx3BUDp5J3BXSsl0Ipw3rIuGyBfdxcQIO6v%2B%2B5lsWuZq1Uw5Vx4UC8lfnf6eDOc4VstRpdGdPZXDbx2vFXp33ZHZUo%2FnDT7baON7zXy%2Buslhx4IFcBJasmrAEMp3npA%2BTdyRl6w97DTEEnEpfnsixGxlvYUYH1lXCmC0xWE9BKDXies00E0rw%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:17:05,250 INFO    Thread-19 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/4nk5540z-media/plotly/all generated.png_0_228295ae.plotly.json
+2021-07-26 15:17:05,586 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:17:06,538 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:06,713 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:08,965 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:10,984 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:11,321 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:15,295 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:17:15,295 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_1_5e4b813a.plotly.json with policy now
+2021-07-26 15:17:15,303 DEBUG   Thread-20 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:17:15,315 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:17:15,321 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:17:15,328 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:17:15,438 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:15,628 DEBUG   Thread-20 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:17:15,640 DEBUG   Thread-20 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:17:15,747 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:15,757 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:17:16,543 DEBUG   Thread-20 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_1_5e4b813a.plotly.json?Expires=1627395393&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=jcL6EMAyrsvhRrY%2FPpOK3yMUjSRj75Lclblu5fZF06HE4k7mbcAbOMvojVRBro5YXpDxyeCohc5IfKEl9UYgJkehg5ys0EDsME%2FmtXb%2BqojwVTD%2BDVwhhNUByxo4Z3RNIkgxcWdiwL%2FwJGu0rhM612GvLCc360BXbk2IMhCvridQ%2F9CyfllGuciVekPoUu56BPhUCutSrOUgFOS9lLHVy5gH2Av%2BxgfBMaJczSA6IyzJaaGaEzmnNZ8kiAI8q08OfSfol89VL5RQlDDc%2BeHLCeuCyEYn4Snc%2FSEnj5hghwkl9dbqz2t%2B9b3EcMpySV1ka6VhOoAW7r2djGhaWb4xkQ%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:17:16,545 INFO    Thread-20 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1ufie1yz-media/plotly/all generated.png_1_5e4b813a.plotly.json
+2021-07-26 15:17:18,489 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:19,884 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:20,219 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:20,589 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:17:20,589 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:17:20,589 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:17:20,596 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:17:20,890 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:17:24,333 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:24,550 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:27,399 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:17:27,401 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_2_b32e50f3.plotly.json with policy now
+2021-07-26 15:17:27,401 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:17:27,407 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:17:27,418 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:17:27,433 DEBUG   Thread-21 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:17:27,763 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:17:27,766 DEBUG   Thread-21 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:17:27,775 DEBUG   Thread-21 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:17:27,875 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:28,736 DEBUG   Thread-21 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_2_b32e50f3.plotly.json?Expires=1627395405&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=ghf9nw0o45435memIt2h0h8mqIGY99Waf232wwRUcrkPSV4Cepp7OJVXQV%2FPYGqwDGTFhRNJutMffFobT8uD4XL5BLhMqTasKfEzg%2Fvq0gQSVm7R7i%2BxN5YGKzfr2X7L2c5l9IqI8t3Jp8G8KDzpiElYMOOh6LMgtvx%2FtOeGZosoGObOGNxfl1MvInht%2B0RoRAtNg4GcjXTTRztEhU8RBByc8ZXDzU3kr966SmLRGSC7SNoUCJgIzvGhSW3BNZqufCCrjTRbT%2BzfCphfWERbiqOGKb9shMxqtAjd4PdVagn2ZiLPEL2ie1lrx59kuevCY5woSkARIVGuhD0LRzktYA%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:17:28,738 INFO    Thread-21 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/csxbm3ps-media/plotly/all generated.png_2_b32e50f3.plotly.json
+2021-07-26 15:17:28,788 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:31,467 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:33,250 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:33,468 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:35,894 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:17:35,894 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:17:35,894 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:17:35,901 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:17:36,221 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:17:37,704 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:38,047 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:41,797 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:17:41,797 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_3_3f38384f.plotly.json with policy now
+2021-07-26 15:17:41,805 DEBUG   Thread-22 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:17:41,816 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:17:41,819 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:17:41,828 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:17:42,127 DEBUG   Thread-22 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:17:42,134 DEBUG   Thread-22 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:17:42,153 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:42,237 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:42,773 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:17:43,065 DEBUG   Thread-22 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_3_3f38384f.plotly.json?Expires=1627395419&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=AC7Sahyft7XBtztBE2m9pPcxghEHOn5HJpajnOu5c1xow%2B9aG05Hy30C%2FvjRb5XtEXT3eMek5YNayXzdt%2FuwkXOwt8oW9M%2FG7WvSZI4bE5RKng5n3BIsuWuAy%2BIq8S5ptku45%2Fulz%2FY00T45NcVbYpA2yfFqEVUgD%2BT4y3lqA60TyAKEjo5IJsXz3JhzWmx41FbxpX0pzQxSbZjHgxW2GqCUZ4py2dy7S5g0ufDlqEAcwHCgsDQr5ggc6JATl%2BuLOrNGYSnToRaUWPFtKhD9Cyh%2BY3dXoH3Blq0FET4V0weJbDXvedGRli%2Fnly%2B2ekgT5pjQuji284fIAVmT4WeY5Q%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:17:43,067 INFO    Thread-22 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/uh4pnru5-media/plotly/all generated.png_3_3f38384f.plotly.json
+2021-07-26 15:17:44,923 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:46,606 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:46,827 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:17:51,062 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:51,225 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:17:51,226 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:17:51,226 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:17:51,232 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:17:51,563 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:17:53,642 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:17:53,642 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_4_d41e47bb.plotly.json with policy now
+2021-07-26 15:17:53,649 DEBUG   Thread-23 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:17:53,662 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:17:53,664 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:17:53,670 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:17:53,779 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:17:53,966 DEBUG   Thread-23 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:17:53,976 DEBUG   Thread-23 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:17:54,943 DEBUG   Thread-23 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_4_d41e47bb.plotly.json?Expires=1627395431&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=q5HiPG1C9UK97QuH8QTCgbZbrl7g31d71yBbuRusshIBnKC7CZmKd3AqnkoxOQhHW7grPwY6kz%2B4%2FOBufa7H3nhWkrGp3MPV20fYONmzWp9OtTvuH6QvPGaTG%2BzbGJrVvcGEHqTPlePocOn9g0QsIka%2BMf0ick01GwEUIVTb%2ByjS7%2F0Ho4TO0z9qcfWQyoyEmuBlF6m3Epr3yUTXhJmN9ouHKRg0QVIAJJgUrDfOEhNk8rH9M%2FgzEGcQFK95cknVLrZyjqxAU%2Foq28bvUafgwJpWWlAf0OM3sSKzI26TK08DaprfTRfE8Waxf7hLC0UqCCf94XA%2Bq7WwJer8VYeOEw%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:17:54,944 INFO    Thread-23 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/5hrsy8ba-media/plotly/all generated.png_4_d41e47bb.plotly.json
+2021-07-26 15:17:55,514 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:17:59,956 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:00,876 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:18:04,351 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:18:04,351 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_5_2e361981.plotly.json with policy now
+2021-07-26 15:18:04,356 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:18:04,360 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:18:04,365 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:18:04,377 DEBUG   Thread-24 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:04,398 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:04,773 DEBUG   Thread-24 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:04,779 DEBUG   Thread-24 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:18:04,785 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:18:05,656 DEBUG   Thread-24 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_5_2e361981.plotly.json?Expires=1627395442&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=DL1f%2BhogOLGpQD4%2B2jbKgsT9kcQOuVr0rP%2Bq3gdorBjU5%2BHkRouWnjdV7spZRTNz1B7C%2BMUgeTyAG9qrW3aWi2c4H7bM0qM6BkOqGTzvXyhBM1kCIRmhCmIBuNY5z35cHVNTgYjv0Iwf0DAg5Aandp0dnzJsL6NBLgZMp5T9iW%2BmwTKrEqL%2FxFlhbXGtgmF8qJ6xKEk3F11YcJN2JoSb%2BwNcT8ckE5llosbp7jt%2BF7Jsy%2BI8fxi%2FC%2BXmDN2OhJjR%2BYlsaSa7uMKKCC7EQEV02LHqZpmEW%2BAke%2BfZ8zA5I%2BYOXSlcEYe3EzjcZPY4IT79hkXrIvzJ9ExPFQt3ae3nKg%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:18:05,658 INFO    Thread-24 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/255co77p-media/plotly/all generated.png_5_2e361981.plotly.json
+2021-07-26 15:18:06,566 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:18:06,567 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:18:06,567 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:18:06,571 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:06,923 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:08,840 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:13,293 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:14,092 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:18:14,495 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:18:14,495 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_6_86542577.plotly.json with policy now
+2021-07-26 15:18:14,503 DEBUG   Thread-25 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:14,516 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:18:14,518 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:18:14,522 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:18:14,791 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:18:15,013 DEBUG   Thread-25 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:15,020 DEBUG   Thread-25 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:18:15,934 DEBUG   Thread-25 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_6_86542577.plotly.json?Expires=1627395452&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=q7Z%2FVTBtCotib972sVQIXKNNWOFQc%2B1d47ofLe6LqD6asQFE2EgVFYUrySmBSkJlplwNyyvMNmNHqvmgCV5O%2BuG652MTzCc56VhxHkMHN%2BDKBxvK0XZ4G0ovJgCVZ8TE58p6bLBFlLidKCLTqYzINC%2B16ihrctTtn1JmkoRYfCpgK%2F3WypkLJg%2B4VHb56L3bLiFM8n4w%2BdkQ90LJmcVYDHuh5OUGj5wmxH%2B4q6PgwF%2FG%2BZgkO5vOkaxeXeYvvnl7fcm4dkCU78IZvXGSv8OTlX3gZ9ebeGZLOKUUYygPD3wzRA9ZKjnSU%2FU%2FXinr822KzCEpAX%2FqcejsUYEyK7yvwA%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:18:15,935 INFO    Thread-25 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1330g8o0-media/plotly/all generated.png_6_86542577.plotly.json
+2021-07-26 15:18:17,735 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:21,926 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:18:21,926 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:18:21,926 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:18:21,931 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:22,283 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:22,285 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:24,478 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:18:24,479 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_7_9f76c61b.plotly.json with policy now
+2021-07-26 15:18:24,489 DEBUG   Thread-26 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:24,501 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:18:24,503 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:18:24,513 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:18:24,798 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:18:24,835 DEBUG   Thread-26 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:24,842 DEBUG   Thread-26 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:18:25,296 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:18:25,868 DEBUG   Thread-26 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_7_9f76c61b.plotly.json?Expires=1627395462&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=SqTBVXa23rV91hizwBYzR5vMed7Xn%2ByNZmHnzw082ebEFPRbN4MldG9vY0I6eA1v6tndhNxlhzP46TOEMfiFY8GkAKdsz%2FOFRB%2FTH5z8HjSRTFpS3T2lQF3kLfvgA%2FSE6SUrlTsroSDCeBZkpF8jkfQeve9PnX7GNTqcNxFaTbzopdRHUaY0Wh3nFaI5ZJNSZXDyC8w4Np7tBIu%2FeDLHnnPuI9%2BwhkX6lUjmAqqV8f%2FQpp5ah%2FTAVaImAiJJNrXCdRjbp7mnkuqOP5OQuEv%2F8rBQ5no4qF%2ByqkWQ0JHd690WtsNxSEy7%2FowUGJ0rPAPxP3MNNO2VKfr5DAUSxmau7Q%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:18:25,869 INFO    Thread-26 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1vyxyefa-media/plotly/all generated.png_7_9f76c61b.plotly.json
+2021-07-26 15:18:26,616 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:31,057 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:34,609 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:18:34,609 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_8_6ef30332.plotly.json with policy now
+2021-07-26 15:18:34,614 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:18:34,618 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:18:34,625 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:18:34,635 DEBUG   Thread-27 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:34,805 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:18:34,961 DEBUG   Thread-27 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:34,969 DEBUG   Thread-27 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:18:35,029 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:18:35,499 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:35,903 DEBUG   Thread-27 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_8_6ef30332.plotly.json?Expires=1627395472&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Gqc5qrP9bjC58SyEt7nwN8xn20b7LJP%2BOamIwIizMmAUYHXX1InS3QJavPqgdSZOnQLP5LCaxOflZ5sr5lFH7kWLi9wu%2BMD%2B8dN0p0B5FMC8JEH4Aw5L2fGrg64wlPJwnagg5rTDtAVPyxqth561L7n8KeNEmKYRO329A7vFRVv5aLaR%2BovDrYtxKDa1kbceLNN9jkhvUkpsMupb7TQal58VuioWejZqpPNTdTRB65GmjLFXIWHSa0hQvHAkXWjvaYtlEx0OKGBmQZN%2Bb4sDBkuFw7R9TmBtiPldr20Ij%2FKbeKcd30rWpFByb4ZdxRIj5YQX1uayaMwaqq7pCPJq%2BQ%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:18:35,904 INFO    Thread-27 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/3uzmgw6x-media/plotly/all generated.png_8_6ef30332.plotly.json
+2021-07-26 15:18:37,286 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:18:37,286 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:18:37,286 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:18:37,293 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:37,643 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:39,939 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:44,382 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:45,507 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:18:45,507 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_9_138ebe21.plotly.json with policy now
+2021-07-26 15:18:45,515 DEBUG   Thread-28 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:45,528 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:18:45,531 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:18:45,538 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:18:45,811 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:18:45,843 DEBUG   Thread-28 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:45,850 DEBUG   Thread-28 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:18:46,215 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:18:46,859 DEBUG   Thread-28 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_9_138ebe21.plotly.json?Expires=1627395483&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=BqKWk5FMO2MlFCFN77omhecNnyN7tYEtR7sOGkNaCHE%2Fje3dC9Af3EoSxdmxIsJhqqfuHSZC6NOpX0%2Fw8Vy7YiGGejZSMICp3SJg3N9VBy4k7NVMfoyXkItWX9EJSNQaLub80u7iUtvhkaLcrHsokT%2FxTuQJm3vg5EabUhgFaFYInBX4HTaeC%2BoxgfN%2B%2B256EbKC9UbPfTfsVzbGVN0x4X2TAGKYBOefiRLCA%2BFR1rjWaiyXQKt%2FhRW83nv6TDHvXkyg693Z9RYaq1N6FZ1QA3s44s8GKMBHbh%2B6jbuAJAU4VCUbOapNofrmeOX6HsvPdzy919%2BrF%2FCN1T%2FbeZDszg%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:18:46,861 INFO    Thread-28 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/31nxy43c-media/plotly/all generated.png_9_138ebe21.plotly.json
+2021-07-26 15:18:48,823 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:52,645 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:18:52,646 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:18:52,646 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:18:52,650 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:52,958 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:53,266 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:18:56,028 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:18:56,029 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_10_f3235700.plotly.json with policy now
+2021-07-26 15:18:56,036 DEBUG   Thread-29 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:18:56,049 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:18:56,052 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:18:56,059 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:18:56,382 DEBUG   Thread-29 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:18:56,388 DEBUG   Thread-29 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:18:56,734 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:18:56,819 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:18:57,304 DEBUG   Thread-29 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_10_f3235700.plotly.json?Expires=1627395494&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=EgVHvGEc5MOTB6vzQixhHP9S4Fr1TPtOYJsAD0w8NIu4yrKBirlxdueAr6HjsbMLhwTPeo%2BEOIGIi8l3KuhXVL5vYQYzMFOsLXq4URkyi3XaeNDynKZXjSjW7nPUd57cOiJFxNYhIErPTHpUtvxUY6%2FslTRdfTqOAU6aGE6i5YqNG%2BKaH8qsatinLHCJ947PQdAeGp53Gr%2FyKS14AlPqryGa7lojBYkY0MdSR6P6Fh6DtUFKWxNU3BwJuC8JT%2BhXqhDHZHOTMCOkujTLAoWWFgr0PxipzLeNdOWxSQva1VSlOOOD1%2BQLcLmK9lJVlNZeF9wGDFRzFIJIjoxcocKGkA%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:18:57,305 INFO    Thread-29 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1gyukdp1-media/plotly/all generated.png_10_f3235700.plotly.json
+2021-07-26 15:18:57,713 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:02,154 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:06,010 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:19:06,011 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_11_2bda64ec.plotly.json with policy now
+2021-07-26 15:19:06,018 DEBUG   Thread-30 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:06,031 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:19:06,034 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:19:06,038 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:19:06,417 DEBUG   Thread-30 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:06,423 DEBUG   Thread-30 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:19:06,595 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:06,825 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:19:07,441 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:19:07,443 DEBUG   Thread-30 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_11_2bda64ec.plotly.json?Expires=1627395504&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Do%2BaTt2Gz4Dl%2BwbM%2BokC4FhaBOQOyxDUc%2BENJhOal%2F5vWXA5l1AcCTvpzcG9NovcTguxrY6X%2BSh%2BVVdAA7M1V6mNcUHO%2BfSb1J8V0VzCxE2ReaVx%2FVx5xbX11uS3O65dAW5ROLq6bFJpPCE9upI4Tv6NdsMg7UVVdIxalH%2Fp4YTXUoQ7KoB3k4O5G%2FYV3R%2FJ9Nl8ZFOU01PWyDWNMoejTqZi1AbRVwBEMq19%2FnyO4xkxuXusDBdm%2Bf%2B4mVjuSBWS7P6li1DAi%2FrSVEjFdFM9An35BIEczOn6BmynQY8uqNRfpHiaLG7MSZ7s2eP8DQMcKeIG%2BoRxRfkFa%2FB%2Fz%2FJ1Lg%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:19:07,444 INFO    Thread-30 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1bf1r2o7-media/plotly/all generated.png_11_2bda64ec.plotly.json
+2021-07-26 15:19:07,961 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:19:07,961 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:19:07,961 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:19:07,966 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:08,363 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:11,036 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:15,482 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:16,595 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:19:16,602 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_12_72ca12e7.plotly.json with policy now
+2021-07-26 15:19:16,610 DEBUG   Thread-31 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:16,616 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:19:16,619 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:19:16,627 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:19:16,832 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:19:16,931 DEBUG   Thread-31 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:16,938 DEBUG   Thread-31 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:19:17,400 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:19:17,886 DEBUG   Thread-31 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_12_72ca12e7.plotly.json?Expires=1627395514&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=o8a6oUwESOcKb8MqA2Ini0N9tAWeyu5sJ%2B8QwiFKkx6qekq65tzyy6%2Fm9JRPaM1%2BCU6BYZz9nTuIn8fJ3OpZAr9saSFK6%2BZHSPNmNn13hHvc56dlg4FfNw2e79bmdZrEgSFf%2BN6NKOYdmP53pkmETlu1DITZ6p9GMSJzeVK%2BrN%2Fdd9O6He%2B42nqhOblH831Dh%2BrAWhmCVVn4HqKflBTA9Yt6zPvJJHgN47rVUa7D%2FxoW8iITyCNR0KHcurVA0fdiIFE05UTb1jKfrR%2Bz2TwWw0jkAXjBuYqQeNLAGvjl7FVvJeJZ%2B3z2lqSPYhgGQH4X9UICKAUe07p%2B1vSWKXD8Ww%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:19:17,887 INFO    Thread-31 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1j8ufhd6-media/plotly/all generated.png_12_72ca12e7.plotly.json
+2021-07-26 15:19:19,926 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:23,366 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:19:23,366 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:19:23,366 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:19:23,370 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:23,723 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:24,366 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:26,872 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:19:26,872 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_13_2944063f.plotly.json with policy now
+2021-07-26 15:19:26,880 DEBUG   Thread-32 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:26,894 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:19:26,898 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:19:26,907 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:19:27,181 DEBUG   Thread-32 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:27,188 DEBUG   Thread-32 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:19:27,321 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:19:27,839 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:19:28,126 DEBUG   Thread-32 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_13_2944063f.plotly.json?Expires=1627395524&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=CGI9fjDa94nqsTXNvkuk7HVMDqxbiBzrYEZ20NTRiljoF%2BPOHyHtBkdS404%2BGWhf4RwOv5emeN%2BgQ2Y1OnuXgZV6FTYlTuHtbTPa%2FVKVcnAeKwIcz7oKgJTXKlHFdYDue9THFSZWanJ2J4xXRqUUqjUz6Sw9EwGOcMSKkQtTnMXUhVr3NH1dnYSXrco%2BVam%2BHXDQZRqhKJ6osIZ1Y%2F4mX8Ao4WCDc1rWuv0ETw4eZegMUvvxk%2F6cuTVdQaJ4j785CbcSsfKeM57qwyHemgqu5HsfjF5XQkwBt77UStQDmdbsVrvzj3W847BC7KbajGtJWb1fNcWzk4oyDMb2PFHpgQ%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:19:28,128 INFO    Thread-32 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/m2mo3p77-media/plotly/all generated.png_13_2944063f.plotly.json
+2021-07-26 15:19:28,812 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:33,257 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:37,157 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:19:37,157 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_14_afba2b3e.plotly.json with policy now
+2021-07-26 15:19:37,164 DEBUG   Thread-33 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:37,176 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:19:37,179 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:19:37,186 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:19:37,485 DEBUG   Thread-33 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:37,497 DEBUG   Thread-33 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:19:37,704 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:37,846 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:19:37,917 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:19:38,470 DEBUG   Thread-33 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_14_afba2b3e.plotly.json?Expires=1627395535&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=BDvgzOBUfAbHoGZEKumr6Mv8szi7o2Xk3291KJ4m0D%2B2oqPrjTw6jmZ%2F0s%2FaDlYBSs4QZItxBwS8kLIydrjFi9iTCd6NpIFSRT53fvY4GvQ5ToK2b7saVL4UKhBIfiaU%2BbCMyGcaP4HD4YrL7ZyHrR2uYEt6pXXRaJdAhcshXD8ZkT8v5pOgMA8PvwW4mvUDJnsszOjKosRn0sSdZfKJ5gzhRfva9KEs2HlRNsbNRVo%2FgrD%2B2%2Bq9HEvguezkgrjyVHA816cbSxmrIDs%2FvgW3zpIPGEsupLaXwrTx7lbQbYGErZJZ3Iy5kXAMDRNdteW8drhB9XffkQJSfV8f0c9rzA%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:19:38,472 INFO    Thread-33 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/dpo8zho6-media/plotly/all generated.png_14_afba2b3e.plotly.json
+2021-07-26 15:19:38,725 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:19:38,725 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:19:38,726 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:19:38,731 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:39,036 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:42,147 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:46,589 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:47,476 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:19:47,476 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_15_5ee6461f.plotly.json with policy now
+2021-07-26 15:19:47,477 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:19:47,480 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:19:47,488 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:19:47,495 DEBUG   Thread-34 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:47,817 DEBUG   Thread-34 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:47,824 DEBUG   Thread-34 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:19:47,854 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:19:48,185 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:19:48,813 DEBUG   Thread-34 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_15_5ee6461f.plotly.json?Expires=1627395545&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=rjsqJhnERYZ0MeH0Jt9Y0llg%2BMxDWEI7%2BtV15c45r5r%2BPBKe5MJZeLSoa2FsVq2glBr8EsJ6VW6dhbRzCGMCQteZaMUs3OiB4jtFy7IWM4L4s4NL%2FMrMjdHfa4s8iKYzTFllfb%2F3gUuMCXrYOlQAwzknE3DjscSdg%2FSPciZW9R2woI3m6BzjR3XOk3CwiLMyl3NAhC3z5R6Tr7NeejAVdTipqy64ar%2BrQTfvLdqJ2qzv1Npjfz%2B7df8cVdYOlvJ2RGOD%2Bt0XODxZGSrJDGD%2BTfP7F0dKf75Te6jXefC%2BV6JGGhBuWcwjkdAk1Rh%2FecZscu7QANrxQ5WkhAgKvX3aZw%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:19:48,815 INFO    Thread-34 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1rc74wct-media/plotly/all generated.png_15_5ee6461f.plotly.json
+2021-07-26 15:19:51,038 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:54,039 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:19:54,039 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:19:54,040 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:19:54,044 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:54,340 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:55,479 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:19:57,939 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:19:57,940 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_16_824e8518.plotly.json with policy now
+2021-07-26 15:19:57,947 DEBUG   Thread-35 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:19:57,961 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:19:57,963 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:19:57,975 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:19:58,277 DEBUG   Thread-35 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:19:58,284 DEBUG   Thread-35 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:19:58,338 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:19:58,862 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:19:59,358 DEBUG   Thread-35 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_16_824e8518.plotly.json?Expires=1627395556&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=MYymzbr28qhguFnthEs9NrarvSFToRa6pUKCGE8oiobewAxlvZsiPSFZnXdGrRB2Eva51NUDkllJzMwtczTQf1WN%2FG9RGUDGFkzFR2BccnhP0imTXOcl1SdnguteuGMj6%2FwFXXTJXyVAAzNQSbVfK%2B5VnzkR9WR1AmrwQ8LF0JLmH%2FHcf4KYz5GgR0mcWPWwI0RpQQyOktHlaqDdv6sFWhGQQI5MeRbD7zj47s%2B3q2pI0SrDLeJsQA1VXtf0X0DZuujZn5a%2Fuz4iXC2fFm7sEMmBVT6R7%2BByZ0SXj9XP512RjiMtN7rZNkNe4PNofGIbOKwuQKLXprpg%2BJQoW1EXLw%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:19:59,360 INFO    Thread-35 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/11yzc3xr-media/plotly/all generated.png_16_824e8518.plotly.json
+2021-07-26 15:19:59,923 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:04,364 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:08,218 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:20:08,223 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_17_f71ca78b.plotly.json with policy now
+2021-07-26 15:20:08,224 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:20:08,228 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:20:08,236 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:20:08,244 DEBUG   Thread-36 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:20:08,573 DEBUG   Thread-36 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:20:08,580 DEBUG   Thread-36 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:20:08,805 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:08,869 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:20:09,026 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:20:09,343 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:20:09,343 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:20:09,343 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:20:09,347 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:20:09,469 DEBUG   Thread-36 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_17_f71ca78b.plotly.json?Expires=1627395566&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Vxau6%2FacX8cfd%2BpccuEj7RWBSAYHfKec4fWdbgb%2BwumbVw2SB5qO9Vxt0r9Uo994wkVe3VAQPdq2p0gI91S3fr7%2B4MQK0DugFwPJqzuY0f4I%2FOxPrP2FLaJuQUeL4qzqwEj7%2BbGVTzTIKr9oSc9O0tnDPVDGJXKhDhx7dq%2FaWozzylbLKl9DgBIa2mRZ0WZblUgPZn81ieD5PQyciSD5dDBTto3lA8lgDRh0EN7CRMvYsUyTDMYKSzHIUnmZ0mvuM4x3nSdKZaB9fvhALAFEZrxFKvVm9MbWVupmIb6iWsYm6b7eDBX40phlzjvfpSw2pl%2FiaqwMK7iFyp8Q%2BaSOdw%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:20:09,471 INFO    Thread-36 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/2soby76z-media/plotly/all generated.png_17_f71ca78b.plotly.json
+2021-07-26 15:20:09,701 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:20:13,246 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:17,687 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:18,465 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:20:18,465 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_18_4386f1f6.plotly.json with policy now
+2021-07-26 15:20:18,474 DEBUG   Thread-37 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:20:18,491 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:20:18,495 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:20:18,504 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:20:18,819 DEBUG   Thread-37 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:20:18,826 DEBUG   Thread-37 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:20:18,877 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:20:18,908 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:20:19,741 DEBUG   Thread-37 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_18_4386f1f6.plotly.json?Expires=1627395576&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=l%2BTuntcxWJlC0qrg6A6YSWZQGlQvRF%2B4HXdgER%2F7UTpIJlalZZD0G%2B6epMyAXABCjoRfvGdTf8m7e0yaQDuAzMhRLi3h6lzKkkg0Z50rMn50cLIu9v41BPp8W32zwoU%2B0Dfm%2BmyurQCEpdZOJQQSlJrCngcv4WtVV3hysyV2ySiq0dxryoMEVkbWEvvpeAeYdKyyc%2BiATfuBmxoTHsIrNUCEJzeAbedUNcfAOUufX%2Bi3W%2FH9sjweAbj2BoeZiGO9UUgZUcb%2FFJXK1XXhEFChyT%2BerBPCfM9pNyEqpjMc2s5GjHJUGLsCocZtwVpJH3manZfUO%2B5rUjg03QQ98%2BRA8Q%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:20:19,742 INFO    Thread-37 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/x4hxuig5-media/plotly/all generated.png_18_4386f1f6.plotly.json
+2021-07-26 15:20:22,148 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:24,704 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:20:24,704 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:20:24,704 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:20:24,708 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:20:25,060 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:20:26,589 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:28,800 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:20:28,800 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_19_52aa29b2.plotly.json with policy now
+2021-07-26 15:20:28,808 DEBUG   Thread-38 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:20:28,821 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:20:28,823 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:20:28,833 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:20:28,885 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:20:29,140 DEBUG   Thread-38 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:20:29,146 DEBUG   Thread-38 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:20:29,582 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:20:30,080 DEBUG   Thread-38 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_19_52aa29b2.plotly.json?Expires=1627395586&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=omJdipuTF3Xdtx9MZgVC75kEhVoX4LVbuOKpccZa3iGN%2BTGLFMxHXXyG%2BBwsxCkxfV%2BTuCo0aV1vR0vQlXSyjRemoV%2BITmDSGHtdLuBxUI2Nl3WmUeettbPvDuhmZTTjQAFs9TpV1XmNuSYQsAOiog6WMN5%2B1f%2BV2KBpyQxg07wPgw46EnWdTVgUaWJEJWLI7jniADYNnNCWpITV5UlfU7L1KsCmdD0aL61sq2VytyxFpUXjN41BKHPkt5tOr5XO4b9mHBEcaoguEoSFfwACT25ncFHXdIMslxWk7j6%2BvEkEAYRau9Bge6nSQJKVWEO78EobNCsesrm4qavdOcKpPQ%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:20:30,082 INFO    Thread-38 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1lsoi632-media/plotly/all generated.png_19_52aa29b2.plotly.json
+2021-07-26 15:20:31,042 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:35,484 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:39,352 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:20:39,358 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_20_3339c60b.plotly.json with policy now
+2021-07-26 15:20:39,360 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:20:39,365 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:20:39,378 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:20:39,388 DEBUG   Thread-39 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:20:39,895 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:20:39,935 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:40,062 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:20:40,062 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:20:40,063 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:20:40,069 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:20:40,098 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:20:41,960 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:20:41,961 DEBUG   Thread-39 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:20:41,974 DEBUG   Thread-39 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:20:42,919 DEBUG   Thread-39 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_20_3339c60b.plotly.json?Expires=1627395599&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=L7FryGBf5Cc6M5ALwoY6fr8oUSDyJ9MbskGLp3rANmYCJQnsh2TE8GUZ9PBUuMF7VuSv2Z8SHU7%2BEojhD8tzR12TCQ29ofa8ynPk20oID6IpADFpdSIxPRaFS2YkIxyHZA1JTipd1NKy6qiF2k%2Fik%2FxDLs8ozdqM%2BWABjeW4WPfJat2uZROkL6Vfrxeutw9oJoZOXewPPlYXT74%2FHS60vqz0hoG6pTpseyz7UN3wa2ei%2FxXd1IK8uCySu46Eyt%2BQ2lXaQBC7emR2rVLaPdxux3DFIkYoyyp4JERZn21ZpVmkofsINnizihHSnvR0Wnw1rhEYmLfJ4h7lOTLYxVh0yw%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:20:42,921 INFO    Thread-39 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/3v4hko82-media/plotly/all generated.png_20_3339c60b.plotly.json
+2021-07-26 15:20:44,386 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:48,831 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:52,013 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:20:52,018 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_21_8b1588d9.plotly.json with policy now
+2021-07-26 15:20:52,026 DEBUG   Thread-40 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:20:52,033 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:20:52,036 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:20:52,045 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:20:52,356 DEBUG   Thread-40 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:20:52,364 DEBUG   Thread-40 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:20:52,906 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:20:53,281 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:20:53,322 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:20:53,323 DEBUG   Thread-40 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_21_8b1588d9.plotly.json?Expires=1627395610&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Han%2FlpW0F0ntGg8z0NOwAgJm9%2F%2FXhs6tiRgT5zcjtbqCSm665tgmxlaZC6KzGJFAddoazfkTo8hriH4RgWBpXC0ioPeq%2FTLLJWjvaKA8finJkLgf%2FRcQHNfFchU%2B%2BPYYHYoZFcd2Z5ZhU6Qj7sXKSApxvL1uMvdZGWyE6Rd1lzKuMkg2vKN%2FEMinVF2fTxozDH5NxjKKGdA0ykqbLmFWQIrP%2F6%2B4bTmREAi1iK2goAU9KBr7g5DGpD%2BeE459lIzBcR7eFYH6W33gZxdQ3O629NCVkDffa2Ppx7N%2BQ0gaSFwQzqBCEHUkeSn3QeEur6uaWL05pkX2gW2YPBtA6J%2B6yg%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:20:53,325 INFO    Thread-40 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/30cqke0u-media/plotly/all generated.png_21_8b1588d9.plotly.json
+2021-07-26 15:20:56,966 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:20:56,966 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:20:56,967 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:20:56,973 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:20:57,316 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:20:57,729 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:02,178 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:02,707 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:21:04,577 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:21:04,577 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_22_80404476.plotly.json with policy now
+2021-07-26 15:21:04,585 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:21:04,588 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:21:04,592 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:21:04,600 DEBUG   Thread-41 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:21:04,917 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:21:04,975 DEBUG   Thread-41 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:21:04,983 DEBUG   Thread-41 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:21:05,921 DEBUG   Thread-41 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_22_80404476.plotly.json?Expires=1627395622&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=J6o757sov9IAo9CJLISw2B1xyUS2q5ZRyRJ6n2tmDKN3Z%2FDRgxrLoJNetnjKdXRuOgdTgrxWvA4%2F8JDo9c7SIApBJmqzMEWOv2%2FitcWcMnZaxdmLYGx6Ln0z4mrrX7pmkdiGE2NS2XuUqwyVK65KsEGOgRRWonNhBORajI8wA%2BXeQd5tykkxFj7oKjv5rfo%2BxgsSvOnIoRnoyRHx6FZnAUDzG0pSt%2BSOgEJyCXOQYt0syyFldDRU9DiU143qXavu9%2FFCjinZSlB4EuWMiS9T95YYvLu%2FHSnRvqTIRO7PJnLQ7X9CkRLuPUkvMHzfk2AG%2BezIYUIoUEqMbAOY9Co%2FIQ%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:21:05,922 INFO    Thread-41 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1yg3pfnn-media/plotly/all generated.png_22_80404476.plotly.json
+2021-07-26 15:21:06,626 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:11,086 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:12,318 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:21:12,319 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:21:12,319 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:21:12,324 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:21:12,675 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:21:15,532 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:15,814 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:21:15,815 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_23_3b2c153d.plotly.json with policy now
+2021-07-26 15:21:15,823 DEBUG   Thread-42 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:21:15,834 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:21:15,837 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:21:15,840 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:21:15,927 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:21:16,157 DEBUG   Thread-42 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:21:16,164 DEBUG   Thread-42 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:21:16,224 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:21:17,063 DEBUG   Thread-42 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_23_3b2c153d.plotly.json?Expires=1627395633&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=WpyhEmdurHfXr8KmO61Y6jfdu40AOAdCQ53UDg1%2BHLGPCE7o%2FfNjBvSuHb4k4ONTU7c2MnOAptLUOIHKuize5ET590gexEAL9uolyY2B6EgMrkAUyhIenn%2Fwlbr31CdAb8Z5NDoBrx%2FNSjFu00cJ%2FobPx2jgAClU%2F%2BONV2JW6UMcnA6rMTBOvF0NSBa9mk9GGf%2FwTfjhAMx6RF1IADQNnOSu59c8UN8o5RgPNPjMLGXiRjlAxmK%2FnUgl6oiYqJTMZp%2FS%2BvQ9UPffXcY8rTenKrcvPDl%2BG%2FWdeNuJ%2B0rk66iRr5tBmcjehPuyuhal3%2BHOpNrvp2dz7cnXxWTxFBJruQ%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:21:17,065 INFO    Thread-42 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/38usc0m3-media/plotly/all generated.png_23_3b2c153d.plotly.json
+2021-07-26 15:21:19,980 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:24,426 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:27,293 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:21:27,294 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_24_9efb8a8e.plotly.json with policy now
+2021-07-26 15:21:27,304 DEBUG   Thread-43 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:21:27,331 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:21:27,335 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:21:27,346 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:21:27,625 DEBUG   Thread-43 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:21:27,633 DEBUG   Thread-43 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:21:27,678 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:21:27,679 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:21:27,679 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:21:27,684 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:21:27,938 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:21:27,981 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:21:28,100 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:21:28,554 DEBUG   Thread-43 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_24_9efb8a8e.plotly.json?Expires=1627395645&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=ssI0i11MtOTo1a%2Bv%2FoCSyeLTawb%2BMwbyAU6n8Qkfgbs3Op1pXb4i7GohnCiXIF3Umr3OsNRuWVcEV0yFP85e%2FepZEZ%2BM3nAJym6WKJnMcy6A5LlFfI7tIN%2Fk6iQMLcJs06zE03CwDGqDaKU62ckEnyBMfTdP3TtrBHArT6th69TESQ5g1HnE5RCKW%2F72C9N7t3fUz%2FGvJrJHcYsvuhPmWm5giTHjvUvoeM4shWYY6OnDXAYd1to3F8a3pKYDXcSxG58Kwbfqjt6zt66m7evgKLzX0PMxorqOybF9xsGJW1sl%2Bvfa5r%2BJ0mIG9tnru997%2BwGyHcKBsNxV%2FJ0rkwVjPg%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:21:28,555 INFO    Thread-43 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/o5nyxll5-media/plotly/all generated.png_24_9efb8a8e.plotly.json
+2021-07-26 15:21:28,870 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:33,324 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:37,775 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:38,480 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:21:38,640 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:21:38,640 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_25_aab9e25e.plotly.json with policy now
+2021-07-26 15:21:38,649 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:21:38,653 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:21:38,657 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:21:38,666 DEBUG   Thread-44 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:21:38,949 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:21:39,095 DEBUG   Thread-44 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:21:39,101 DEBUG   Thread-44 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:21:40,016 DEBUG   Thread-44 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_25_aab9e25e.plotly.json?Expires=1627395656&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=NwFHCG4HoV99XddMnPyXCd0DRo8Ec1tzpA6raadgqZ%2B320RTf0NwjtAuecBXGqvhTuStHyobCGoOAp70SuW5b%2BgpJ%2BJWGLUB9RCHfWOivMrHGkyvFqu005BUbc1UK357fO9YJzIdSG2elzSXPGJAvVqnezE0VaLdJZEVemZIziJLJCnpNNT%2BC1LJ%2BnnwylJOYWZMJxFfhrbZCxU4XgMg%2BQvDVaIN9oH8QmvoFeXr59dTqSGlzwK4hkVQIy64QEG%2BTpbV3YygAVZfGmhNSx7kfsT66xDSwVQF%2Fdc7XBw6uyT%2FHF7KuZqn5wmv09Fdchgm2yIG%2F4SDGK%2F9lnghqvKKpA%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:21:40,018 INFO    Thread-44 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/nfp1zi1x-media/plotly/all generated.png_25_aab9e25e.plotly.json
+2021-07-26 15:21:42,219 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:42,984 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:21:42,984 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:21:42,984 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:21:42,990 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:21:43,274 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:21:46,666 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:50,243 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:21:50,243 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_26_a246d006.plotly.json with policy now
+2021-07-26 15:21:50,254 DEBUG   Thread-45 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:21:50,268 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:21:50,272 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:21:50,278 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:21:50,666 DEBUG   Thread-45 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:21:50,674 DEBUG   Thread-45 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:21:50,962 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:21:51,121 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:51,510 DEBUG   Thread-45 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_26_a246d006.plotly.json?Expires=1627395668&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=STPRcE0MLoZJgGzK3019cHFqzKTstqtQ%2F5dstHO42U5l%2BwHe6vEdrSCrPISNQY7UVZKuwZ3x6IP9FuYn3pstcscXS2SoOMLLwJeT44Mbq5UrkIxt%2FHbE4kTNi219G37C7If9S6TT3GmjolFzejjo%2F4m3ZLjRAw1h08l1ZtzR%2BsOcWfomqnMKOx3kv5zeoTLEq3l2%2BFsGATQ3iGesEosmk1vK%2Ba8cDkkhrAtUUFCutRbOOp326Xtjj5OqPIkguLSkwG948%2BCB%2BJo6HHP0TnGBOgUhDxfaAj%2Fm2vWHf%2F9b5iXm4XB5bklEdDyg0qNFQSNsg8RxDvjU8nbaikAjTRKBeg%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:21:51,512 INFO    Thread-45 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/3itjx3rn-media/plotly/all generated.png_26_a246d006.plotly.json
+2021-07-26 15:21:55,574 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:21:58,277 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:21:58,277 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:21:58,278 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:21:58,285 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:21:58,653 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:22:00,021 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:22:03,324 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:22:03,325 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_27_ec769acd.plotly.json with policy now
+2021-07-26 15:22:03,330 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:22:03,333 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:22:03,337 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:22:03,347 DEBUG   Thread-46 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:22:03,669 DEBUG   Thread-46 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:22:03,676 DEBUG   Thread-46 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:22:03,977 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:22:04,472 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:22:04,556 DEBUG   Thread-46 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_27_ec769acd.plotly.json?Expires=1627395681&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=V8T%2BEWgJvF%2B%2B7kiiJRgqYLX5SWh2g5Ox33AGDVPODqGwRjvrUl%2BIxPwWJ3XU8UHpIQatuCR%2BQEndbp0o1VMtww43vI64juWck%2Fn%2BRGmNW5b1CLf4gw6xlQb9r0gVyg1xnJwkRbpb049qMhLEnD68uyQ1ZxJJ6D1XV1Y%2FQoDZ80SLqIU1ITpTHqSUxcYi7DgJMi3Sm4T83ZV4f0iJ2xgggQ%2FMdz9eS0FORZNf3qeFEheELITEX4Tw0vGXlI9mQ%2BFqnkOnZ0Y88nu1lPxG9p979ymnOfnzXcbw6RPJdnssNBAVIlLX8o9xgS8QGArxPbgiEVaocKMNF2PI878H5Qyg5A%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:22:04,558 INFO    Thread-46 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/wa7mppgp-media/plotly/all generated.png_27_ec769acd.plotly.json
+2021-07-26 15:22:08,919 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:22:09,916 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:22:13,366 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:22:13,658 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: status
+2021-07-26 15:22:13,658 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:13,658 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: status
+2021-07-26 15:22:13,668 DEBUG   SenderThread:86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:22:14,015 DEBUG   SenderThread:86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:22:14,825 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:22:14,826 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_28_29cec37f.plotly.json with policy now
+2021-07-26 15:22:14,834 DEBUG   Thread-47 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:22:14,846 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:22:14,849 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:22:14,854 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:22:14,989 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:22:15,241 DEBUG   Thread-47 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:22:15,253 DEBUG   Thread-47 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:22:16,164 DEBUG   Thread-47 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_28_29cec37f.plotly.json?Expires=1627395692&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=lbpFiJ6Z3ycpU7ZnkEj7CHttBpkqjDWJEzqW52Vrwc8hkSQ9eU2A2b6ZfaFgzJkDAbMkmWBrsFhg%2FGEMkNnYA3h%2BQpgRj8OXw%2FlDkGQPd4UIJY3qLDGUEP%2B0N10JHK5TRv3W3tD39aDPLjVbaRvNlhAv07BlMnSAqIPYGGJzU%2FGwlu%2FYjRTBkiaAZ20Dd%2BeIWgV7fTgkU3kwPqJFFUuVBttsjbqQhSeQ1mRl2354eqPs1lxItNij5teDdc4YwbLkrEhoH6R%2FyqB3ywHkjIQhEvYvVC%2BdX09ujtvbEWu%2BQNFBf9LOFr1UNk9JtGVp7FvxWH1asGu%2BVhLH6Q5kHC7ClA%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:22:16,166 INFO    Thread-47 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/2de4qugk-media/plotly/all generated.png_28_29cec37f.plotly.json
+2021-07-26 15:22:17,811 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:22:22,257 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:22:25,900 DEBUG   SenderThread:86989 [sender.py:send():88] send: files
+2021-07-26 15:22:25,901 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file media/plotly/all generated.png_29_da95eacb.plotly.json with policy now
+2021-07-26 15:22:25,908 DEBUG   Thread-48 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:22:25,923 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:22:25,926 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:22:25,929 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:22:26,001 INFO    Thread-14 :86989 [dir_watcher.py:_on_file_modified():228] file/dir modified: wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:22:26,301 DEBUG   Thread-48 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:22:26,323 DEBUG   Thread-48 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:22:26,510 DEBUG   SenderThread:86989 [sender.py:send():88] send: history
+2021-07-26 15:22:26,515 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: poll_exit
+2021-07-26 15:22:26,516 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:22:26,523 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:22:26,524 DEBUG   SenderThread:86989 [sender.py:send():88] send: exit
+2021-07-26 15:22:26,524 INFO    SenderThread:86989 [sender.py:send_exit():156] handling exit code: 0
+2021-07-26 15:22:26,524 INFO    SenderThread:86989 [sender.py:send_exit():164] send defer
+2021-07-26 15:22:26,525 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:26,525 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: poll_exit
+2021-07-26 15:22:26,527 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: defer
+2021-07-26 15:22:26,527 INFO    HandlerThread:86989 [handler.py:handle_request_defer():68] handle defer: 0
+2021-07-26 15:22:26,527 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:26,527 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: defer
+2021-07-26 15:22:26,527 INFO    SenderThread:86989 [sender.py:send_request_defer():173] handle sender defer: 0
+2021-07-26 15:22:26,527 INFO    SenderThread:86989 [sender.py:send_request_defer():209] send defer: 1
+2021-07-26 15:22:26,528 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: defer
+2021-07-26 15:22:26,528 INFO    HandlerThread:86989 [handler.py:handle_request_defer():68] handle defer: 1
+2021-07-26 15:22:26,614 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:26,614 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: defer
+2021-07-26 15:22:26,614 INFO    SenderThread:86989 [sender.py:send_request_defer():173] handle sender defer: 1
+2021-07-26 15:22:26,614 INFO    SenderThread:86989 [sender.py:send_request_defer():209] send defer: 2
+2021-07-26 15:22:26,616 DEBUG   SenderThread:86989 [sender.py:send():88] send: stats
+2021-07-26 15:22:26,617 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: defer
+2021-07-26 15:22:26,617 INFO    HandlerThread:86989 [handler.py:handle_request_defer():68] handle defer: 2
+2021-07-26 15:22:26,618 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:26,618 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: defer
+2021-07-26 15:22:26,618 INFO    SenderThread:86989 [sender.py:send_request_defer():173] handle sender defer: 2
+2021-07-26 15:22:26,618 INFO    SenderThread:86989 [sender.py:send_request_defer():209] send defer: 3
+2021-07-26 15:22:26,619 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: defer
+2021-07-26 15:22:26,619 INFO    HandlerThread:86989 [handler.py:handle_request_defer():68] handle defer: 3
+2021-07-26 15:22:26,621 DEBUG   SenderThread:86989 [sender.py:send():88] send: summary
+2021-07-26 15:22:26,625 INFO    SenderThread:86989 [sender.py:_save_file():547] saving file wandb-summary.json with policy end
+2021-07-26 15:22:26,626 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:26,626 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: defer
+2021-07-26 15:22:26,626 INFO    SenderThread:86989 [sender.py:send_request_defer():173] handle sender defer: 3
+2021-07-26 15:22:26,626 INFO    SenderThread:86989 [sender.py:send_request_defer():209] send defer: 4
+2021-07-26 15:22:26,626 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: defer
+2021-07-26 15:22:26,626 INFO    HandlerThread:86989 [handler.py:handle_request_defer():68] handle defer: 4
+2021-07-26 15:22:26,627 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:26,627 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: defer
+2021-07-26 15:22:26,627 INFO    SenderThread:86989 [sender.py:send_request_defer():173] handle sender defer: 4
+2021-07-26 15:22:26,627 INFO    SenderThread:86989 [dir_watcher.py:finish():280] shutting down directory watcher
+2021-07-26 15:22:27,010 INFO    SenderThread:86989 [dir_watcher.py:finish():309] scan: wandb/run-20210726_151647-3pi41y0u/files
+2021-07-26 15:22:27,011 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/config.yaml config.yaml
+2021-07-26 15:22:27,013 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/wandb-metadata.json wandb-metadata.json
+2021-07-26 15:22:27,014 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/requirements.txt requirements.txt
+2021-07-26 15:22:27,015 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/output.log output.log
+2021-07-26 15:22:27,030 DEBUG   Thread-49 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:22:27,031 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/wandb-summary.json wandb-summary.json
+2021-07-26 15:22:27,040 DEBUG   Thread-50 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:22:27,059 DEBUG   Thread-51 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:22:27,059 DEBUG   Thread-52 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): api.wandb.ai:443
+2021-07-26 15:22:27,060 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_18_4386f1f6.plotly.json media/plotly/all generated.png_18_4386f1f6.plotly.json
+2021-07-26 15:22:27,060 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_27_ec769acd.plotly.json media/plotly/all generated.png_27_ec769acd.plotly.json
+2021-07-26 15:22:27,060 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_15_5ee6461f.plotly.json media/plotly/all generated.png_15_5ee6461f.plotly.json
+2021-07-26 15:22:27,060 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_1_5e4b813a.plotly.json media/plotly/all generated.png_1_5e4b813a.plotly.json
+2021-07-26 15:22:27,061 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_28_29cec37f.plotly.json media/plotly/all generated.png_28_29cec37f.plotly.json
+2021-07-26 15:22:27,061 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_9_138ebe21.plotly.json media/plotly/all generated.png_9_138ebe21.plotly.json
+2021-07-26 15:22:27,061 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_11_2bda64ec.plotly.json media/plotly/all generated.png_11_2bda64ec.plotly.json
+2021-07-26 15:22:27,061 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_0_228295ae.plotly.json media/plotly/all generated.png_0_228295ae.plotly.json
+2021-07-26 15:22:27,061 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_19_52aa29b2.plotly.json media/plotly/all generated.png_19_52aa29b2.plotly.json
+2021-07-26 15:22:27,061 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_16_824e8518.plotly.json media/plotly/all generated.png_16_824e8518.plotly.json
+2021-07-26 15:22:27,062 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_17_f71ca78b.plotly.json media/plotly/all generated.png_17_f71ca78b.plotly.json
+2021-07-26 15:22:27,062 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_29_da95eacb.plotly.json media/plotly/all generated.png_29_da95eacb.plotly.json
+2021-07-26 15:22:27,062 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_8_6ef30332.plotly.json media/plotly/all generated.png_8_6ef30332.plotly.json
+2021-07-26 15:22:27,062 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_21_8b1588d9.plotly.json media/plotly/all generated.png_21_8b1588d9.plotly.json
+2021-07-26 15:22:27,062 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_5_2e361981.plotly.json media/plotly/all generated.png_5_2e361981.plotly.json
+2021-07-26 15:22:27,062 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_6_86542577.plotly.json media/plotly/all generated.png_6_86542577.plotly.json
+2021-07-26 15:22:27,062 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_10_f3235700.plotly.json media/plotly/all generated.png_10_f3235700.plotly.json
+2021-07-26 15:22:27,063 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_22_80404476.plotly.json media/plotly/all generated.png_22_80404476.plotly.json
+2021-07-26 15:22:27,063 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_7_9f76c61b.plotly.json media/plotly/all generated.png_7_9f76c61b.plotly.json
+2021-07-26 15:22:27,063 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_23_3b2c153d.plotly.json media/plotly/all generated.png_23_3b2c153d.plotly.json
+2021-07-26 15:22:27,063 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_25_aab9e25e.plotly.json media/plotly/all generated.png_25_aab9e25e.plotly.json
+2021-07-26 15:22:27,063 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_3_3f38384f.plotly.json media/plotly/all generated.png_3_3f38384f.plotly.json
+2021-07-26 15:22:27,063 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_4_d41e47bb.plotly.json media/plotly/all generated.png_4_d41e47bb.plotly.json
+2021-07-26 15:22:27,063 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_2_b32e50f3.plotly.json media/plotly/all generated.png_2_b32e50f3.plotly.json
+2021-07-26 15:22:27,063 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_24_9efb8a8e.plotly.json media/plotly/all generated.png_24_9efb8a8e.plotly.json
+2021-07-26 15:22:27,064 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_20_3339c60b.plotly.json media/plotly/all generated.png_20_3339c60b.plotly.json
+2021-07-26 15:22:27,064 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_14_afba2b3e.plotly.json media/plotly/all generated.png_14_afba2b3e.plotly.json
+2021-07-26 15:22:27,064 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_13_2944063f.plotly.json media/plotly/all generated.png_13_2944063f.plotly.json
+2021-07-26 15:22:27,064 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_12_72ca12e7.plotly.json media/plotly/all generated.png_12_72ca12e7.plotly.json
+2021-07-26 15:22:27,064 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/plotly/all generated.png_26_a246d006.plotly.json media/plotly/all generated.png_26_a246d006.plotly.json
+2021-07-26 15:22:27,064 INFO    SenderThread:86989 [dir_watcher.py:finish():315] scan save: wandb/run-20210726_151647-3pi41y0u/files/media/graph/g.r.a.p.h._.0_summary_a9191527.graph.json media/graph/g.r.a.p.h._.0_summary_a9191527.graph.json
+2021-07-26 15:22:27,064 INFO    SenderThread:86989 [sender.py:send_request_defer():209] send defer: 5
+2021-07-26 15:22:27,065 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: defer
+2021-07-26 15:22:27,065 INFO    HandlerThread:86989 [handler.py:handle_request_defer():68] handle defer: 5
+2021-07-26 15:22:27,065 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:27,065 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: defer
+2021-07-26 15:22:27,065 INFO    SenderThread:86989 [sender.py:send_request_defer():173] handle sender defer: 5
+2021-07-26 15:22:27,066 INFO    SenderThread:86989 [file_pusher.py:finish():169] shutting down file pusher
+2021-07-26 15:22:27,066 INFO    SenderThread:86989 [sender.py:send_request_defer():209] send defer: 6
+2021-07-26 15:22:27,066 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: defer
+2021-07-26 15:22:27,066 INFO    HandlerThread:86989 [handler.py:handle_request_defer():68] handle defer: 6
+2021-07-26 15:22:27,067 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:27,067 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: defer
+2021-07-26 15:22:27,067 INFO    SenderThread:86989 [sender.py:send_request_defer():173] handle sender defer: 6
+2021-07-26 15:22:27,217 DEBUG   Thread-48 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/media/plotly/all%20generated.png_29_da95eacb.plotly.json?Expires=1627395703&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=dNOvcI9n7XSqVCqtbMs%2BSdt6RF3jAQBprb6C6hBcDXASMnQ0rqJMXFaLlSLbOuS0EjBt4%2FP35gyU22IpsrQ9NwfBBdsEiwklY3slSj38guKYGMbDQV973RP%2BglxRTbjiim4wphRufh3uywNcVxN%2Fp%2B2w%2BwYNm56FBeY23rMjMl7udiWvdvAdEg6FOgKnrnRsIYxR%2BiFjz8%2Fffr3iCOAa8qYu%2Fed1hl3i7fRwJcgA2Nqn9DJqBb25V4aUsBMHfBHRGx8tPHhQx5AVQVHVlmNgTeyMg95OuIIGb%2BnQK%2BviOtva8hnv9CZSTWsLffJ3nTeQXgXDzHEM%2Bed37rA65iNNRQ%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:22:27,219 INFO    Thread-48 :86989 [upload_job.py:push():112] Uploaded file /tmp/tmpjgqx5i3zwandb/1ypdisnm-media/plotly/all generated.png_29_da95eacb.plotly.json
+2021-07-26 15:22:27,363 DEBUG   Thread-49 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:22:27,372 DEBUG   Thread-49 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:22:27,387 DEBUG   Thread-50 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:22:27,395 DEBUG   Thread-50 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:22:27,396 DEBUG   Thread-51 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:22:27,404 DEBUG   Thread-51 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:22:27,445 DEBUG   Thread-52 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /graphql HTTP/1.1" 200 None
+2021-07-26 15:22:27,469 DEBUG   Thread-52 :86989 [connectionpool.py:_new_conn():975] Starting new HTTPS connection (1): storage.googleapis.com:443
+2021-07-26 15:22:27,852 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:22:27,917 DEBUG   Thread-50 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/requirements.txt?Expires=1627395705&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=mcc4%2BhuNdj76sxzPvputmNS%2FN8aOsKdj%2B4Dig%2BZzB0v5P7XuYLHwwirx6rZRG7oqLQtKNMmN%2Bk%2B1clh5kmiAnIviwYMECxL5vrZY0j%2BBOM3LwvIZl4Ods4tPDg8zPpodiaS413nJlXwAHrl3E2nRuxsSkx8Mcug3tcxvv2OjpIuIo9Ydpa8NNOjzpx1AsXPVEJ18SijRIfdvpoUVZJccUDRRrr3wN02tTH3PbifDeIx9W0CQRu2Z0FizhE4oi5I6GaBk7Kmo103siLy8ngEQTEN2o%2BMl6MYrhPR2wMfHlWCYg4tOJg3SUwaJlwFIrPU4xhFfNck32CpkLMWEO%2FEd%2Fw%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:22:27,922 INFO    Thread-50 :86989 [upload_job.py:push():112] Uploaded file wandb/run-20210726_151647-3pi41y0u/files/requirements.txt
+2021-07-26 15:22:27,925 DEBUG   Thread-49 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/config.yaml?Expires=1627395705&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=Te08qxZihF0Nq4p1UcCoXxceZOJ4GCykOwjaR9U%2BgZE%2FUAbVBfuykxFHWX8n689tux1D7irpsNHA%2FVQlZJZJcdnYdtfCBDfTvzMwYYp5i%2BSkgurfEVrjczN4GLnzptSKkNtFWkJXG%2B3zIvZDjexXFXNw5YoJ5eci8eOjk2XCRDVh%2Fy1R8b4uaJsCv6nN3s2RGQKIz5ZuWQQIfi6vrdyFQdQfgs66GJOnM7oDdvPzTHtsB9NAjEI3YcBe8%2BaztrhB0KQSOWqQXBeshxxV33L33KgNODDsLacCpLhFOKG%2BXiglGDHqrLqCCCWe7VxJbapueEmXVzkuV9ro97viSeEmig%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:22:27,931 INFO    Thread-49 :86989 [upload_job.py:push():112] Uploaded file wandb/run-20210726_151647-3pi41y0u/files/config.yaml
+2021-07-26 15:22:27,953 DEBUG   Thread-51 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/output.log?Expires=1627395705&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=qoN2I1eP6N%2BPbOr%2Bg4fUYAYC0ZpoMySTCRtYnTM3cj4XZRZXElAlPhGwYK2flxAxVNLJK9FupETkWz52snk8A2jJfQ8JtqfAm3YeaYp0phrHtHxuJqewgoWK9KcbEokeo7TwLOexXXp24WOoFECyqY8xKQjgrY3In3pJwobPS5qlm88ZFa0jT%2BxbJI%2BkzYZKV1kXP2MrPoMw4l6Ox9MK5aqPD%2Ftggzpexi5FTpF8cFjz7nApJmbwkgOq%2BhgcI07rmmRXU9dlDxkrFSVTlYqfj5Q3z%2B2BCq3K%2FF6jkv30C7%2F5HO%2F25vngYbjdyUrpS5H3QFDpiaFcX%2FTHIGQQC8Vkyw%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:22:27,955 INFO    Thread-51 :86989 [upload_job.py:push():112] Uploaded file wandb/run-20210726_151647-3pi41y0u/files/output.log
+2021-07-26 15:22:28,063 DEBUG   Thread-11 :86989 [connectionpool.py:_make_request():461] https://api.wandb.ai:443 "POST /files/mvalente/toy_data_zf/3pi41y0u/file_stream HTTP/1.1" 200 None
+2021-07-26 15:22:28,066 INFO    SenderThread:86989 [sender.py:send_request_defer():209] send defer: 7
+2021-07-26 15:22:28,067 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: defer
+2021-07-26 15:22:28,067 INFO    HandlerThread:86989 [handler.py:handle_request_defer():68] handle defer: 7
+2021-07-26 15:22:28,067 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:28,067 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: defer
+2021-07-26 15:22:28,067 INFO    SenderThread:86989 [sender.py:send_request_defer():173] handle sender defer: 7
+2021-07-26 15:22:28,068 INFO    SenderThread:86989 [sender.py:send_request_defer():209] send defer: 8
+2021-07-26 15:22:28,068 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: defer
+2021-07-26 15:22:28,069 DEBUG   SenderThread:86989 [sender.py:send():88] send: final
+2021-07-26 15:22:28,069 INFO    HandlerThread:86989 [handler.py:handle_request_defer():68] handle defer: 8
+2021-07-26 15:22:28,069 DEBUG   SenderThread:86989 [sender.py:send():88] send: footer
+2021-07-26 15:22:28,069 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:28,070 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: defer
+2021-07-26 15:22:28,070 INFO    SenderThread:86989 [sender.py:send_request_defer():173] handle sender defer: 8
+2021-07-26 15:22:28,196 DEBUG   Thread-52 :86989 [connectionpool.py:_make_request():461] https://storage.googleapis.com:443 "PUT /wandb-production.appspot.com/mvalente/toy_data_zf/3pi41y0u/wandb-summary.json?Expires=1627395705&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=aRRelAET6DmDZGkRkuDT80bKnxy8IZ%2FACS%2BisIDxZSlg%2BdNxLagIKlnvUkk4a%2BfFPRA%2FuMtka%2F%2FeMKfSZd0j3RtP7Ih8j0Er6eFbIxr3xQHpp5ya2Rx3rQz6DspaUsH%2B8DEDXn%2Fd2NgO9d5DmdhtVuKH1LZCfI36gTj8QpAhkRJJL%2FpZMB6q3NrsHajwxr%2BJEf63vVVMOlUTjdGBYA1%2Fa7mAWCQrrvWkG38I0XSZScOoyj00CFcU2bnLyYo7vle28Cy64Pmv8XrTryHDXHINIbrS1vF%2B2vKf5e465Pe882c1rVYaD1OHCmaUsOV6FepWYVFz5etiCerBpGjsqhYLUA%3D%3D HTTP/1.1" 200 0
+2021-07-26 15:22:28,198 INFO    Thread-52 :86989 [upload_job.py:push():112] Uploaded file wandb/run-20210726_151647-3pi41y0u/files/wandb-summary.json
+2021-07-26 15:22:28,530 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: poll_exit
+2021-07-26 15:22:28,530 DEBUG   SenderThread:86989 [sender.py:send():88] send: request
+2021-07-26 15:22:28,530 DEBUG   SenderThread:86989 [sender.py:send_request():97] send_request: poll_exit
+2021-07-26 15:22:28,531 INFO    SenderThread:86989 [file_pusher.py:join():174] waiting for file pusher
+2021-07-26 15:22:28,533 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: get_summary
+2021-07-26 15:22:28,538 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: sampled_history
+2021-07-26 15:22:28,540 DEBUG   HandlerThread:86989 [handler.py:handle_request():54] handle_request: shutdown
+2021-07-26 15:22:28,540 INFO    HandlerThread:86989 [handler.py:finish():267] shutting down handler
+2021-07-26 15:22:29,069 INFO    WriterThread:86989 [datastore.py:close():257] close: wandb/run-20210726_151647-3pi41y0u/run-3pi41y0u.wandb
+2021-07-26 15:22:29,532 INFO    SenderThread:86989 [sender.py:finish():588] shutting down sender
+2021-07-26 15:22:29,532 INFO    SenderThread:86989 [file_pusher.py:finish():169] shutting down file pusher
+2021-07-26 15:22:29,533 INFO    SenderThread:86989 [file_pusher.py:join():174] waiting for file pusher
+2021-07-26 15:22:30,150 INFO    MainThread:86989 [internal.py:handle_exit():137] Internal process exited

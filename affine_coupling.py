@@ -19,7 +19,7 @@ class AffineCoupling(Transform):
         if net == 'MLP':
             self.nn_s = MLP(self.split_dim + context_dim, hidden_dims, out_dim, non_linearity)
             self.nn_s = MLP(self.split_dim + context_dim, hidden_dims, out_dim, non_linearity)
-            self.nn = MLP(self.split_dim + context_dim, hidden_dims,out_dim, non_linearity)
+            self.nn = MLP(self.split_dim + context_dim, hidden_dims, out_dim, non_linearity)
         elif net == 'MLPR':
             self.nn_s = MLPR(self.split_dim + context_dim, hidden_dims, self.split_dim, non_linearity)
             self.nn_t = MLPR(self.split_dim + context_dim, hidden_dims, self.split_dim, non_linearity)
@@ -31,7 +31,7 @@ class AffineCoupling(Transform):
         x2_size = self.input_dim - self.split_dim
         x1, x2 = x.split([self.split_dim, x2_size], dim=self.event_dim)
 
-        shift, scale  = self.nn(x1).split([x2_size, x2_size], dim=-1)
+        shift, scale = self.nn(x1).split([x2_size, x2_size], dim=-1)
         scale = torch.sigmoid(scale + self.affine_scale_eps) + self.affine_eps
 
         y1 = x1
@@ -46,7 +46,7 @@ class AffineCoupling(Transform):
         y2_size = self.input_dim - self.split_dim
         y1, y2 = y.split([self.split_dim, y2_size], dim=self.event_dim)
 
-        shift, scale  = self.nn(y1).split([y2_size, y2_size], dim=-1)
+        shift, scale = self.nn(y1).split([y2_size, y2_size], dim=-1)
         scale = torch.sigmoid(scale + self.affine_scale_eps) + self.affine_eps
 
         x1 = y1

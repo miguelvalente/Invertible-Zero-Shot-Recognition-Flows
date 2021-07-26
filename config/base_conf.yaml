@@ -27,7 +27,7 @@ net:
   value: MLP #MLPR # MLP
 non_linearity:
   desc: non linear function for Affine Coupling
-  value: prelu # relu leakyrelu
+  value: leakyrelu #prelu # relu leakyrelu
 act_norm:
   desc: presence of actnorm
   value: true
